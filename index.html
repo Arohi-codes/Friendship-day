@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>To My Favorite People ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+<!-- ===========================
+        LOADING SCREEN
+=========================== -->
+
+<div class="loader">
+
+    <div class="loader-heart">
+        ❤️
+    </div>
+
+    <p>Loading Beautiful Memories...</p>
+
+</div>
+
+
+
+
+
+<!-- ===========================
+        FLOATING BACKGROUND
+=========================== -->
+
+<div class="background">
+
+    <span>💖</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>💕</span>
+    <span>🌷</span>
+    <span>💜</span>
+    <span>⭐</span>
+    <span>💗</span>
+
+</div>
+
+
+
+
+
+<!-- ===========================
+        HERO SECTION
+=========================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h3>💝 Friendship Day Special 💝</h3>
+
+        <h1>
+
+            To My
+            <span>Favorite People</span>
+
+        </h1>
+
+        <p>
+
+            Some people enter our life
+            and quietly become the reason
+            behind our biggest smiles.
+
+        </p>
+
+        <button
+            class="continue-btn"
+            onclick="scrollToIntro()">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+        INTRO SECTION
+=========================== -->
+
+<section
+    class="intro"
+    id="intro">
+
+    <div class="intro-card">
+
+        <h2>
+
+            Before You Continue...
+
+        </h2>
+
+        <p>
+
+            Friendship is not about talking every day.
+
+            It's about knowing that no matter how busy life becomes,
+            there will always be someone standing beside you.
+
+        </p>
+
+        <p>
+
+            This small website is only a tiny way
+            to say...
+
+        </p>
+
+        <h3>
+
+            Thank You For Being Part Of My Life ❤️
+
+        </h3>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        FRIENDSHIP STORY
+=========================== -->
+
+<section class="story" id="story">
+
+    <h2 class="section-title">
+        Our Friendship Story 💖
+    </h2>
+
+    <div class="story-container">
+
+        <div class="story-card">
+
+            <div class="story-icon">🌱</div>
+
+            <h3>It All Started</h3>
+
+            <p>
+                Every beautiful friendship begins with
+                one simple conversation.
+                We never knew those small moments
+                would become unforgettable memories.
+            </p>
+
+        </div>
+
+
+
+        <div class="story-card">
+
+            <div class="story-icon">😂</div>
+
+            <h3>Crazy Memories</h3>
+
+            <p>
+                From laughing for no reason
+                to sharing secrets,
+                every memory became a treasure
+                we'll never forget.
+            </p>
+
+        </div>
+
+
+
+        <div class="story-card">
+
+            <div class="story-icon">🤝</div>
+
+            <h3>Forever Bond</h3>
+
+            <p>
+                Distance may change,
+                schools may change,
+                but true friendship
+                always remains the same.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+        CHOOSE YOUR FRIEND
+=========================== -->
+
+<section class="friends" id="friends">
+
+    <h2 class="section-title">
+
+        This lovely surprise for you 💕
+
+    </h2>
+
+    <p class="friend-subtitle">
+
+        Click on your name to open
+        a special letter made just for you.
+
+    </p>
+
+
+
+    <div class="friends-grid">
+
+        <button
+            class="friend-card"
+            onclick="openLetter('Vrinda')">
+
+            🌸
+
+            <h3>Vrinda</h3>
+
+            <p>
+                Sweet • Caring • Amazing
+            </p>
+
+        </button>
+
+
+
+
+        <button
+            class="friend-card"
+            onclick="openLetter('Kanishka')">
+
+            🌷
+
+            <h3>Kanishka</h3>
+
+            <p>
+                Funny • Kind • Supportive
+            </p>
+
+        </button>
+
+
+
+
+        <button
+            class="friend-card"
+            onclick="openLetter('Latika')">
+
+            🌹
+
+            <h3>Latika</h3>
+
+            <p>
+                Calm • Lovely • Precious
+            </p>
+
+        </button>
+
+
+
+
+        <button
+            class="friend-card"
+            onclick="openLetter('Pranshi')">
+
+            🌺
+
+            <h3>Pranshi</h3>
+
+            <p>
+                Cute • Cheerful • Wonderful
+            </p>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ===========================
+        LETTER POPUP
+=========================== -->
+
+<div
+    class="popup"
+    id="popup">
+
+    <div class="popup-content">
+
+        <button
+            class="close-btn"
+            onclick="closeLetter()">
+
+            ✕
+
+        </button>
+
+        <h2 id="friendTitle">
+
+            Dear Friend ❤️
+
+        </h2>
+
+        <p id="friendMessage">
+
+            Your special message will appear here.
+
+        </p>
+
+        <div class="popup-heart">
+
+            💖
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+        FRIENDSHIP PROMISES
+=========================== -->
+
+<section class="promises" id="promises">
+
+    <h2 class="section-title">
+        Friendship Promises 🤝
+    </h2>
+
+    <div class="promise-container">
+
+        <div class="promise-card">
+
+            <span>💖</span>
+
+            <h3>Always Support</h3>
+
+            <p>
+                No matter what happens,
+                I'll always support you
+                and cheer for your dreams.
+            </p>
+
+        </div>
+
+        <div class="promise-card">
+
+            <span>🌈</span>
+
+            <h3>Always Smile</h3>
+
+            <p>
+                May our friendship always
+                stay full of laughter,
+                happiness and positivity.
+            </p>
+
+        </div>
+
+        <div class="promise-card">
+
+            <span>✨</span>
+
+            <h3>Forever Friends</h3>
+
+            <p>
+                Time changes,
+                people grow,
+                but true friendship
+                stays forever.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+        FINAL SURPRISE
+=========================== -->
+
+<section class="final-surprise" id="surprise">
+
+    <div class="surprise-card">
+
+        <h2>
+            One Last Message 💌
+        </h2>
+
+        <p>
+
+            Every smile,
+            every joke,
+            every memory,
+            every moment...
+
+            Thank you for making
+            my life brighter.
+
+        </p>
+
+        <button
+            class="surprise-btn"
+            onclick="showSurprise()">
+
+            Open Final Surprise 🎁
+
+        </button>
+
+        <div
+            class="surprise-message"
+            id="surpriseMessage">
+
+            ❤️
+
+            You are not just my friends...
+
+            You are my comfort,
+            my happiness,
+            my best memories,
+            and a part of my life
+            that I'll always be grateful for.
+
+            Happy Friendship Day! 🌸✨
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+        FOOTER
+=========================== -->
+
+<footer>
+
+    <h2>
+        Happy Friendship Day 💖
+    </h2>
+
+    <p>
+
+        Made with ❤️
+        for the most amazing friends.
+
+    </p>
+
+</footer>
+
+
+
+
+
+<!-- ===========================
+        OPTIONAL MUSIC
+=========================== -->
+
+<audio
+    id="bgMusic"
+    loop>
+
+    <source
+        src="music.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+
+
+
+<!-- ===========================
+        JAVASCRIPT
+=========================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
